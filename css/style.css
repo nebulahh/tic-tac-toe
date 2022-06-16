@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  line-height: 1.5;
+  background-color: #131313;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.modal {
+  padding: 30px;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: repeat(3, 8rem);
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+article {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+article:nth-child(1){
+  border-bottom: 1px solid;
+}
+
+article:nth-child(2){
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+article:nth-child(3){
+  border-bottom: 1px solid;
+}
+
+article:nth-child(4){
+  border-bottom: 1px solid;
+}
+
+article:nth-child(5){
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+}
+
+article:nth-child(6){
+  border-bottom: 1px solid;
+}
+
+
+
+article:nth-child(8){
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.btn {
+  margin-top: 3rem;
+  border: 0;
+  cursor: pointer;
+  background: darkgray;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.btn button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#center-btn {
+  margin-top: 30px;
+}
+
+#form-btn {
+  display: block;
+  margin: 0 auto;
+}

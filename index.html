@@ -5,10 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic-Tac-Toe Game</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <script src="main.js"></script>
+ <dialog class="modal" id="modal">
+  <form method="dialog">
+    <ul>
+      <li>
+        <label for="name">Player 1
+          <input type="text" name="player-name" id="player-name" placeholder="name">
+        </label>
+    
+      </li>
+      <li id="center-btn">
+        <button class="btn" type="submit" id="form-btn">Submit</button>
+      </li>
+    </ul>
+  </form>
+ </dialog>
+
+ <section class="container">
+  <h2><i>Tic Tac Toe</i></h2>
+
+  <h3></h3>
+
+  <section id="game" class="gameboard">
+    <article class="board" data-cell="0"></article>
+    <article class="board" data-cell="1"></article>
+    <article class="board" data-cell="2"></article>
+    <article class="board" data-cell="3"></article>
+    <article class="board" data-cell="4"></article>
+    <article class="board" data-cell="5"></article>
+    <article class="board" data-cell="6"></article>
+    <article class="board" data-cell="7"></article>
+    <article class="board" data-cell="8"></article>
+  </section>
+
+ <section class="actions">
+  <div>
+    <button class="btn" id="reset" type="submit">New Game</button>
+  </div>
+
+  <div>
+    <button type="button" class="btn" id="new-name">Enter a name</button>
+  </div>
+ </section>
+ </section>
+  <script src="script/main.js"></script>
 </body>
 </html>
